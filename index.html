@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./images/Music_logo.jpeg">
+    <title>SusMusic - A gentle fall into Music</title>
+    <link rel="stylesheet" href="./style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="main">
+
+    <div class="sidebar">
+        <div class="nav">
+            <div class="nav-option" style="opacity:1">
+              <i class="fa-solid fa-house"></i>  
+              <a href="#">Home</a>
+            </div>
+            <div class="nav-option">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="#">Search</a>
+            </div>
+        </div>
+
+        <div class="library">
+            <div class="options">
+                <div class="lib-options nav-option"> <!-- noticible for applying the same style as nav-opyion -->
+                   <img src="./images/library_icon.png" >
+                   <a href="#">Your Library</a>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+            <div class="lib-box">
+                <div class="box">
+                    <p class="box-p1"> Let's Create Your First Playlist</p>
+                    <p class="box-p2"> It's easy, we'll help you</p>
+                    <button class="badge">Create Playlist</button>
+                </div>
+                <div class="box">
+                    <p class="box-p1"> Let's find some podcasts to follow</p>
+                    <p class="box-p2"> We'll keep you updated on new episodes </p>
+                    <button class="badge">Browse podcasts</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main-content">
+        <div class="sticky-nav">
+            <div class="sticky-nav-icons">
+                <img src="./images/backward_icon.png">
+                <img src="./images/forward_icon.png" class="hide">
+            </div>
+            <div class="sticky-nav-option">
+                <button class="badge nav-item hide">Explore Premium</button>
+                <button class="badge nav-item">Sign up</button>
+                <button class="badge nav-item dark-badge"><i class="fa-solid fa-circle-down" style="margin-right:5px;"></i>Install App</button>
+                <i class="fa-regular fa-user" id="user"></i>
+            </div>
+        </div>
+
+            <h2>Recently Played</h2>
+            <div class="card-container">
+                <div class="card" data-file="songs/Aaoge Jab Tum.mpeg" data-title="Aaoge Jab Tum" data-artist="Cover by Me" data-cover="./images/Aaoge_jab_tum.jpeg">
+                    <img src="./images/Aaoge_jab_tum.jpeg" class="card-image">
+                    <p class="card-title">Aaoge Jab Tum</p>
+                    <p class="card-info">Original Song by Irshad Kamil, Rashid Khan, and Sandesh Sandilya, 2007...</p>
+                </div>
+            </div>
+
+            <h2>Trending now near you</h2>
+            <div class="card-container">
+                <div class="card" data-file="songs/Alag Aasman.mpeg" data-title="Alag Aasmaan" data-artist="Cover by Me" data-cover="./images/Alag_asman.jpeg">
+                    <img src="./images/Alag_asman.jpeg" class="card-image">
+                    <p class="card-title">Alag Aasmaan</p>
+                    <p class="card-info">Original Song by Anuv Jain, 2024...</p>
+                </div>
+
+                <div class="card" data-file="songs/Fav MashUp.mpeg" data-title="Fav MashUp" data-artist="Cover by Me" data-cover="./images/tobu_asho_na_tumi.jpeg">
+                    <img src="./images/tobu_asho_na_tumi.jpeg" class="card-image">
+                    <p class="card-title">Tobu Asho Na Tumi x Bekarar Karke Hume</p>
+                    <p class="card-info">Original Song by Bishorgo Kollol | Hemant Kumar...</p>
+                </div>
+
+                <div class="card" data-file="songs/In Dino x Aaoge Tum Kabhi.mpeg" data-title="In Dino" data-artist="Cover by Me" data-cover="/images/in_dino.jpeg">
+                    <img src="./images/in_dino.jpeg" class="card-image">
+                    <p class="card-title">In Dino x Aaoge Tum Kabhi</p>
+                    <p class="card-info">Original Song by Soham Chakraborty, Pritam Chakraborty | The Local Train...</p>
+                </div>
+                <div class="card" data-file="songs/Jane Wo Kaise.mpeg" data-title="Jane Woh Kaise" data-artist="Cover by Me" data-cover="./images/jane_woh_kaise.jpeg">
+                    <img src="./images/jane_woh_kaise.jpeg" class="card-image">
+                    <p class="card-title">Jane Woh Kaise</p>
+                    <p class="card-info">Original Song by Hemant Kumar, Ghazal, 1957...</p>
+                </div>
+                <div class="card" data-file="songs/Jo Tum Mere Ho.mpeg" data-title="Jo Tum Mere Ho" data-artist="Cover by Me" data-cover="./images/jo_tum_mere_ho.jpeg">
+                    <img src="./images/jo_tum_mere_ho.jpeg" class="card-image">
+                    <p class="card-title">Jo Tum Mere Ho</p>
+                    <p class="card-info">Original Song by Anuv Jain, 2024...</p>
+                </div>
+            </div>
+
+            <h2>Featured Charts</h2>
+            <div class="card-container">
+                <div class="card" data-file="songs/Milke Bhi Hum Na Mile.mpeg" data-title="Tu Jaane Na" data-artist="Cover by Me" data-cover="./images/tu_jane_na.jpeg">
+                    <img src="./images/tu_jane_na.jpeg" class="card-image">
+                    <p class="card-title">Tu Jaane Na</p>
+                    <p class="card-info">Original Song by Atif Aslam & Pritam Chakraborty, 2009...</p>
+                </div>
+                <div class="card" data-file="songs/Songo Chara.mpeg" data-title="Songo Chara Kore" data-artist="Cover by Me" data-cover="./images/songo_chara.jpeg">
+                    <img src="./images/songo_chara.jpeg" class="card-image">
+                    <p class="card-title">Songo Chara Kore Sokhi</p>
+                    <p class="card-info">Original Song by Aditi Chakraborty, 2024...</p>
+                </div>
+                <div class="card" data-file="songs/Tere Bina.mpeg" data-title="Tere Bina" data-artist="Cover by Me" data-cover="./images/tere_hawale.jpeg">
+                    <img src="./images/tere_hawale.jpeg" class="card-image">
+                    <p class="card-title">Tere Bina</p>
+                    <p class="card-info">Original Song by A.R. Rahman, Chinmaye, Murtuza Khan & Qadir Khan, 2007...</p>
+                </div>
+            </div>    
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+    </div>   
+    
+    
+    <div class="music-player"> 
+        <div class="album" data-file="./songs/Tere Hawale.mpeg" data-title="Tere Hawaale" data-artist="Cover by Me" data-cover="./images/tere_bina.jpeg">
+            <img src="./images/tere_bina.jpeg" class="album-image">
+            <p class="music-card-title">Tere Hawaale</p>
+            <p class="music-card-info">Arijit Singh</p>
+            <img src="./images/album_icon1.png" class="image-album1">
+            <img src="./images/album_icon2.png"class="image-album2">
+        </div>
+
+        <div class="players">
+            <div class="player-controls">
+                <img src="./images/player_icon1.png" class="player-control-icon" >
+                <i id="prev-button" class="fas fa-step-backward player-control-icon" ></i>
+                <i id="main-play-toggle" class="fas fa-play-circle player-control-icon" style="opacity: 1; "></i>
+                <i id="next-button" class="fas fa-step-forward player-control-icon"></i>
+                <img src="./images/player_icon5.png" class="player-control-icon" id="fifth-button">
+            </div>
+            <div class="playback-bar">
+                <span class="curr-time">00:00</span>
+                <!-- <input type="range" min="0" max="100" class="progress-bar" step="1"> -->
+                 <input type="range" id="seek-slider" value="0" min="0" max="100">
+                <span class="total-time">1:23</span>
+                
+            </div>
+        </div>
+
+        <div class="control">
+                <div class="right-icons">
+                   <img src="./images/controls_icon1.png" class="right-control-icons" >
+                   <img src="./images/controld_icon2.png"  class="right-control-icons"  >
+                   <img src="./images/controls_icon3.png"  class="right-control-icons" style="height: 1.5rem; margin-top: 0.5rem;">
+                   <img src="./images/controls_icon4.png"  class="right-control-icons" style="height: 1.2rem; margin-top: 0.6rem;">
+                   <img src="./images/controls_icon5.png"  class="right-control-icons">
+                </div>
+                <div class="right-bar">   
+                   <input type="range"id="volume-slider" min="0" max="100" class="right-progress-bar" step="1">
+                </div>
+                
+        </div>
+
+    </div> 
+</div>  
+<script src="app.js"></script>
+
+</body>
