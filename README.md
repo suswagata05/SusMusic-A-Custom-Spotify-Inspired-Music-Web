@@ -1,4 +1,4 @@
-# SusMusic - Personal Music Streaming Web App
+# SusMusic – A Custom Spotify Inspired Music Player
 SusMusic is a custom-designed, minimalist music player built entirely using HTML, CSS, and JavaScript. It features a smooth audio playback experience using my own cover songs. 
 
 ### Core Features
